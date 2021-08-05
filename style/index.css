@@ -15,6 +15,52 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.menu-icono{
+    margin: 10% 15%;
+    position: relative;
+    z-index: 10;
+    width:66%;
+    cursor: pointer;
+}
+.menu-cont {
+    background-color: var(--secondColor);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all .5s ease;
+}
+/*para llamarlos desde JS*/
+.active{
+    opacity: 0;
+    transform: translateX(1rem);
+    /*transform: translate(800px);*/
+}
+.opacity{
+    background-color: var(--bgColor);
+    transition: all .5s ease;
+}
+.menu-cont ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 4% 0 4% 0;
+}
+.menu-cont ul li{
+    color: var(--fontColor);
+    display: block;
+    font-size: 4rem;
+    padding: 2% 15%;
+    cursor: pointer;
+}
+/*.menu-cont ul li:hover{
+    background-color: var(--bgColor); MEJORAR ESTA PARTE
+}*/
+
+
+/*HOME*/
 .home{
     display: flex;
 }
@@ -39,6 +85,10 @@ body{
     color: var(--fontColor);
     font-size: 2rem;
     margin-top: 0
+}
+.front{
+    color: var(--secondColor);
+    font-style: normal;
 }
 
 .home-info a{

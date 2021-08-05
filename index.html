@@ -8,10 +8,18 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <nav class="menu">
+    <header class="menu">
         <img src="/assets/logo.svg" alt="logo" />
-        <img src="/assets/menu.svg" alt="menu" />
+      <nav >
+        <img id="icono-menu" class="menu-icono" src="/assets/menuW.svg" alt="menu" />
+        <div id="menuList" class="menu-cont active">
+            <ul>
+                <li><a  href="#inicio">Inicio</a></li>
+                <li><a href="#Allabout">Sobre mí</a></li>
+                <li><a href="#Alltecnology">Tecnologías</a></li>
+                <li><a  href="#Alltecnology">Proyectos</a></li>
+            </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -21,19 +29,19 @@
             <a href="#" target="_blank"><img src="/assets/correo.svg" alt="logo correo" /></a>
             
           </div>
-      <section class="home">
+      <section id="inicio" class="home">
         
         <div class="home-info">
           <h1>
             Hola, <br />
             Soy Jaiber Flor Navia
           </h1>
-          <h4>Desarrollador Frontend</h4>
+          <h4>Desarrollador <span class="typed"></span></h4>
           <a href="#">Contáctame</a>
           <a href="#">Descargar CV</a>
         </div>
       </section>
-      <section class="about">
+      <section id="Allabout" class="about">
         <h2><span class="about-line"></span> Sobre mí</h2>
 
         <div class="about-info">
@@ -44,7 +52,7 @@
           <img src="/assets/avatar.svg" alt="avatar" />
         </div>
       </section>
-      <section class="tecnology">
+      <section id="Alltecnology" class="tecnology">
           <h2> <span class="tecnology-line"></span> Tecnologías</h2>
           <div class="tecnology-img">
             <div class="tecnology-logo">
@@ -64,7 +72,7 @@
               </div>
           </div>
       </section>
-      <section class="projects">
+      <section id="Allprojects" class="projects">
         <h2> <span class="projects-line"></span> Proyectos</h2>
         <div class="projects-list">
             <div class="projects-list--details">
@@ -98,5 +106,8 @@
     <footer>
         <p>Hecho por Jaiber© 2021</p>
     </footer>
-  </body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="/app.js"></script>
+</body>
 </html>
