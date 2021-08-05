@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+:root{
+    --bgColor: #020B16; 
+    --secondColor: #F4A710;
+    --fontFamily: 'Roboto Mono', monospace;
+    --fontColor: #ffffff;
+}
+
+body{
+    background-color: var(--bgColor);
+    font-family: var(--fontFamily);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.home{
+    display: flex;
+}
+.home-icon{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    position: fixed;
+}
+.home-icon img{
+    margin-bottom:1rem
+}
+.home-info{
+    margin: 0 auto 0 13%;
+}
+.home-info h1{
+    color: var(--fontColor);
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+.home-info h4{
+    color: var(--fontColor);
+    font-size: 2rem;
+    margin-top: 0
+}
+
+.home-info a{
+text-decoration:none;
+font-size: 1.5rem;
+color: var(--fontColor);
+padding: 0.5rem 1.5rem ;
+background-color: var(--secondColor);
+border-radius:3rem;
+}
+.home-info a:nth-child(3){
+    margin-right: 13%;
+}
+
+
+/*SECCIÓN ABOUT ME*/
+.about{
+    margin: 14rem 0;
+    
+}
+.about h2{
+    color: var(--fontColor);
+    font-size: 4rem;
+    margin-left: 13%;
+}
+.about-line{
+width: 5rem;
+height: 0;
+border: 0.5rem solid #F4A710;
+transform: rotate(90deg);
+}
+.about-info{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5%;
+    flex-wrap: wrap;
+}
+.about-info p{
+ color: var(--fontColor);
+ font-size: 3rem;
+ width: 50%;
+}
+
+/*TECNOLOGY*/
+
+.tecnology h2{
+    color: var(--fontColor);
+    font-size: 4rem;
+    margin-left: 13%;
+}
+.tecnology-line{
+    width: 5rem;
+    height: 0;
+    border: 0.5rem solid #F4A710;
+    transform: rotate(90deg);
+}
+.tecnology-img{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 3rem;
+    flex-wrap: wrap;
+}
+.tecnology-icon{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.tecnology-icon ul{
+    display: flex;
+}
+.tecnology-icon ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--fontColor);
+    list-style: none;
+    
+    padding-right: 5rem;
+}
+.tecnology-icon ul li img{
+    width: 4rem;
+}
+.figma{
+    width: 2rem;
+}
+
+/*PROJECTS*/
+.projects{
+    margin-top: 14rem;
+}
+.projects h2{
+    color: var(--fontColor);
+    font-size: 4rem;
+    margin-left: 13%;
+}
+.projects-line{
+    width: 5rem;
+    height: 0;
+    border: 0.5rem solid #F4A710;
+    transform: rotate(90deg);
+}
+.projects-list{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 7%;
+    flex-wrap: wrap;
+}
+.projects-list--details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects-list--details img{
+    width: 18rem;
+    height: 20rem;
+    
+    border-radius: 1rem;
+}
+.projects-list--details p{
+    color: var(--fontColor);
+    margin: 0 0 11% 0;
+    
+}
+.projects-list--buttons{
+    width: 100%;
+}
+.projects-list--buttons a{
+    padding: 0.5rem 1.5rem ;
+    text-decoration: none;
+    background: #F4A710;
+    border-radius: 3rem;
+    color: var(--fontColor);
+}
+.projects-list--buttons a:nth-child(1){
+    margin-right: 28%;
+}
+
+/*FOOTER*/
+footer p{
+ color: var(--fontColor);
+ text-align: center;
+ margin-top: 10%;
+}
