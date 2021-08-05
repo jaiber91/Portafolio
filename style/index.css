@@ -34,12 +34,12 @@ body{
 /*para llamarlos desde JS*/
 .active{
     opacity: 0;
-    transform: translateX(1rem);
+    transform: translate(0.2rem);
     /*transform: translate(800px);*/
 }
 .opacity{
     background-color: var(--bgColor);
-    transition: all .5s ease;
+    transition: all .5s ease-out;
 }
 .menu-cont ul{
     display: flex;
@@ -47,6 +47,7 @@ body{
     align-items: center;
     list-style: none;
     padding: 4% 0 4% 0;
+    width: 90%;
 }
 .menu-cont ul li{
     color: var(--fontColor);
@@ -231,4 +232,99 @@ footer p{
  color: var(--fontColor);
  text-align: center;
  margin-top: 10%;
+}
+
+@media (max-width: 992px) {
+    .projects-list--buttons {
+        width: 85%;
+    }
+    .projects-list--buttons a:nth-child(1) {
+        margin-right: 17%;
+    }
+}
+@media (max-width: 768px) {
+    .home-info h1{
+        font-size: 3rem;
+    }
+    .about h2{
+        font-size: 3rem;
+    }
+    .about p{
+        font-size: 2rem;
+    }
+    .tecnology h2 {
+        font-size: 3rem;
+    }
+    .projects h2 {
+        font-size: 3rem;
+    }
+    
+    .projects-list{
+        justify-content: flex-start;
+        margin-left: 11%;
+        gap: 5%;
+    }
+    .projects-list .projects-list--details:nth-child(3){
+        margin-top: 6%;
+    }
+
+
+    
+}
+
+@media (max-width: 576px) {
+    /*.home-icon {
+        flex-direction: row;
+        position: fixed;
+        top: 92%;
+        left: 37%;
+    }*/
+    .about-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about p{
+        width: 82%;
+    }
+    .tecnology-img{
+        margin-left: 4rem;
+    }
+    .tecnology-logo{
+        width: 89%;
+    }
+    .tecnology-icon ul{
+        padding-right: 2rem;
+    }
+    .tecnology-icon ul li{
+        padding-right: 4rem;
+    }
+    .projects-list{
+        justify-content: center;
+    }
+    .projects-list .projects-list--details:nth-child(2){
+        margin-top: 6%;
+    }
+}
+@media (max-width: 420px){
+    .home-info a {
+        padding:0.5%;
+    }
+    .home-info a:nth-child(3) {
+        margin: 0;
+    }
+    .tecnology-logo {
+        width: 100%;
+    }
+    .tecnology-logo img{
+        width: 90%;
+    }
+    .tecnology-icon{
+        width: 100%;
+    }
+    .tecnology-icon ul {
+        padding-right: 2rem;
+    }
+    .tecnology-icon ul li {
+        padding-right: 1rem;
+    }
 }
