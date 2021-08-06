@@ -11,15 +11,125 @@ body{
     font-family: var(--fontFamily);
 }
 
+/*MENU DOS*/
+/*.menuOk{
+    background: var(--fontColor);
+    border-radius: 50%;
+    bottom: 25px;
+    box-shadow: 0 0 0 0 white, 0 0 0 0 white;
+    cursor: pointer;
+    height: 60px;
+    position: absolute;
+    transition: box-shadow 1.1s cubic-bezier(.19, 1, .22, 1);
+    width: 60px;
+    z-index: 2;
+    top: 16%;
+    left: 93%;
+}
+.menuOk:hover{
+    box-shadow: 0 0 0 8px white, 0 0 0 8px white;
+}
+.hamburguer{
+    position: relative;
+    top: 29px;
+    left: 15px;
+    width: 30px;
+    height: 2px;
+    background: #000;
+    display: block;
+    transform-origin: center;
+    transition: .5s ease-in-out;
+}
+.hamburguer:after,
+.hamburguer:before{
+    background: #000;
+    content: '';
+    display: block;
+    transition: .5s ease-in-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.hamburguer:before{
+    top: -10px;
+}
+.hamburguer:after{
+    bottom: -10px;
+}
+input{
+    display: none;
+}
+input:checked ~ label .menuOk{
+    box-shadow: 0 0 0 130vw #F4A710, 0 0 0 130vh #F4A710;
+}
+input:checked ~ label .hamburguer{
+    transform: rotate(45deg);
+}
+input:checked ~ label .hamburguer:after{
+    transform: rotate(90deg);
+    bottom: 0;
+}
+input:checked ~ label .hamburguer:before{
+    transform: rotate(90deg);
+    top: 0;
+}
+input:checked ~ ul{
+    opacity: 1;
+}
+.menuOk-items{
+    position: absolute;
+    top: 25%;
+    left: 37%;
+    transform: translate(-50, -50 );
+    list-style: none;
+    font-size: 45px;
+    opacity: 0;
+    transition: .25s .1s cubic-bezier(0, 1.07, 0, 1.02);
+    z-index: 2;
+}
+.menuOk-items li a{
+    color: var(--bgColor);
+    transform: all 300ms;
+    position: relative;
+}
+.menuOk-items li a:before{
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: #020B16;
+    transition: all 300ms cubic-bezier(1, 0, 0, 1);
+}
+.menuOk-items li a:hover:before{
+    width: 110%;
+}
+.menuOk-items li a:hover{
+    color: #020B16;
+}
+.menuOk-items li a{
+    color: #ffffff;
+    display: block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}*/
+
 .menu{
     display: flex;
     justify-content: space-between;
 }
+.menu-nav{
+    position: fixed;
+    left: 95%;
+    top: 0;
+    
+}
 .menu-icono{
-    margin: 10% 15%;
+    
     position: relative;
     z-index: 10;
-    width:66%;
+    width: 100%;
     cursor: pointer;
 }
 .menu-cont {
@@ -35,7 +145,7 @@ body{
 .active{
     opacity: 0;
     transform: translate(0.2rem);
-    /*transform: translate(800px);*/
+    
 }
 .opacity{
     background-color: var(--bgColor);
@@ -47,7 +157,7 @@ body{
     align-items: center;
     list-style: none;
     padding: 4% 0 4% 0;
-    width: 90%;
+    width: 100%;
 }
 .menu-cont ul li{
     color: var(--fontColor);
@@ -56,6 +166,11 @@ body{
     padding: 2% 15%;
     cursor: pointer;
 }
+.menu-cont ul li a{
+    color: var(--fontColor);
+    text-decoration: none;
+    font-weight: bold;
+}   
 /*.menu-cont ul li:hover{
     background-color: var(--bgColor); MEJORAR ESTA PARTE
 }*/
@@ -235,6 +350,10 @@ footer p{
 }
 
 @media (max-width: 992px) {
+    .menu-icono{
+        width: 125%;
+        right: 36%;
+    }
     .projects-list--buttons {
         width: 85%;
     }
@@ -243,6 +362,13 @@ footer p{
     }
 }
 @media (max-width: 768px) {
+    .menu-icono{
+        width: 163%;
+    right: 96%;
+    }
+    .menu-cont ul li{
+        padding: 4% 15%;
+    }
     .home-info h1{
         font-size: 3rem;
     }
@@ -279,6 +405,10 @@ footer p{
         top: 92%;
         left: 37%;
     }*/
+    .menu-icono {
+        width: 215%;
+        right: 148%;
+    }
     .about-info{
         flex-direction: column;
         align-items: center;
@@ -305,12 +435,29 @@ footer p{
         margin-top: 6%;
     }
 }
-@media (max-width: 420px){
+@media (max-width: 573px) {
     .home-info a {
         padding:0.5%;
+        width: 51%;
+    }
+}
+@media (max-width: 420px){
+    .menu-cont ul li {
+        padding: 7% 15%;
+        font-size: 3rem;
+    }
+    .home-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-info a {
+        padding:0.5%;
+        width: 51%;
     }
     .home-info a:nth-child(3) {
-        margin: 0;
+        margin: 0 0 6% 0;
+        
     }
     .tecnology-logo {
         width: 100%;
@@ -323,6 +470,8 @@ footer p{
     }
     .tecnology-icon ul {
         padding-right: 2rem;
+        flex-direction: row;
+        justify-content: center;
     }
     .tecnology-icon ul li {
         padding-right: 1rem;

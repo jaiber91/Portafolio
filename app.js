@@ -1,10 +1,34 @@
 const menuIcono = document.querySelector('#icono-menu');
 const menuList= document.querySelector('#menuList');
-
+const menuCont = document.querySelector('.menu-cont');
+const inicioList = document.querySelector('.inicioList');
+const miList = document.querySelector('.miList');
+const techList= document.querySelector('.techList');
+const projectList = document.querySelector('.projectList')
 
 menuIcono.addEventListener('click', (e) =>{
     menuList.classList.toggle('active')
     document.body.classList.toggle('opacity')
+})
+
+
+inicioList.addEventListener('click', (e)=>{
+	menuList.classList.toggle('active')
+	document.body.classList.toggle('opacity')
+})
+
+miList.addEventListener('click', (e)=>{
+	menuList.classList.toggle('active')
+	document.body.classList.toggle('opacity')
+})
+
+techList.addEventListener('click', (e)=>{
+	menuList.classList.toggle('active')
+	document.body.classList.toggle('opacity')
+})
+projectList.addEventListener('click', (e)=>{
+	menuList.classList.toggle('active')
+	document.body.classList.toggle('opacity')
 })
 
 const typed = new Typed('.typed', {
