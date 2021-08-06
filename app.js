@@ -6,6 +6,38 @@ const miList = document.querySelector('.miList');
 const techList= document.querySelector('.techList');
 const projectList = document.querySelector('.projectList')
 
+
+
+const form = document.querySelector('.form');
+form.addEventListener('submit', submitForm)
+
+async function submitForm(e){
+	e.preventDefault()
+	const form = new FormData(this)
+	const response = await fetch(this.action, {
+		method: this.method,
+		body:form,
+		headers:{
+			'Accept': 'application/json'
+		}
+	})
+	if (response.ok) {
+		this.reset()
+		swal({
+			title: 'Mensaje enviado',
+			icon: 'success',
+			
+		})
+	} else {
+		
+	}
+}
+
+
+
+
+
+
 menuIcono.addEventListener('click', (e) =>{
     menuList.classList.toggle('active')
     document.body.classList.toggle('opacity')
