@@ -25,18 +25,7 @@
             <li><a class="projectList" href="#Alltecnology">Proyectos</a></li>
           </ul>
         </div>
-        <!--  <input type="checkbox" id="navbar">
-        <label for="navbar">
-          <div class="menuOk">
-            <span class="hamburguer"></span>
-          </div>
-        </label>
-        <ul class="menuOk-items">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#Allabout">Sobre mí</a></li>
-          <li><a href="#Alltecnology">Tecnologías</a></li>
-          <li><a  href="#Alltecnology">Proyectos</a></li>
-        </ul>-->
+       
       </nav>
     </header>
     <main>
@@ -47,8 +36,7 @@
         <a href="https://github.com/jaiber91" target="_blank"
           ><img src="/assets/github.svg" alt="logo github"
         /></a>
-        <a href="mailto:jaiver.navia@gmail.com" target="_blank"
-          ><img src="/assets/correo.svg" alt="logo correo"
+        <a href="#formFull"><img src="/assets/correo.svg" alt="logo correo"
         /></a>
       </div>
       <section id="inicio" class="home">
@@ -59,7 +47,7 @@
           </h1>
           <h4>Desarrollador <span class="typed"></span></h4>
           <div class="home-info--buttom">
-            <a href="#">Contáctame</a>
+            <a href="#formFull">Contáctame</a>
             <a href="/assets/docs/cvPrueba.pdf" download="cv">Descargar CV</a>
           </div>
         </div>
@@ -108,19 +96,19 @@
         <h2><span class="projects-line"></span> Proyectos</h2>
         <div class="projects-list">
           <div class="projects-list--details">
-            <img src="/assets/prueba.jpeg" alt="" />
-            <p>Pagina tributo</p>
+            <img src="/assets/projects/digital.png" alt="img proyectos" />
+            <p>Landing page</p>
             <div class="projects-list--buttons">
-              <a href="#">Demo</a>
-              <a href="#">Github</a>
+              <a href="https://jaiber91.github.io/ClonPagina/" target="_blank">Demo</a>
+              <a href="https://github.com/jaiber91/ClonPagina" target="_blank">Github</a>
             </div>
           </div>
           <div class="projects-list--details">
-            <img src="/assets/prueba.jpeg" alt="" />
-            <p>Pagina tributo</p>
+            <img src="/assets/projects/make.png" alt="img proyecto" />
+            <p>Tienda virtual</p>
             <div class="projects-list--buttons">
-              <a href="#">Demo</a>
-              <a href="#">Github</a>
+              <a href="https://tienda-make-up.vercel.app/" target="_blank">Demo</a>
+              <a href="https://github.com/jaiber91/Tienda-MakeUp" target="_blank">Github</a>
             </div>
           </div>
           <div class="projects-list--details">
@@ -133,7 +121,7 @@
           </div>
         </div>
       </section>
-      <section class="formContainer">
+      <section id="formFull" class="formContainer">
         <form class="form"   action="https://formspree.io/f/mqkwynlk"
         method="POST">
           <input type="text" required name="name" placeholder="Escribe tu nombre" />
