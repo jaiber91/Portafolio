@@ -7,7 +7,7 @@ const techList= document.querySelector('.techList');
 const projectList = document.querySelector('.projectList')
 
 
-
+/*FORMULARIO*/
 const form = document.querySelector('.form');
 form.addEventListener('submit', submitForm)
 
@@ -37,32 +37,37 @@ async function submitForm(e){
 
 
 
-
-menuIcono.addEventListener('click', (e) =>{
+/*EVENTOS MENU*/
+menuIcono.addEventListener('click', () =>{
+	
     menuList.classList.toggle('active')
     document.body.classList.toggle('opacity')
 })
 
 
-inicioList.addEventListener('click', (e)=>{
+inicioList.addEventListener('click', ()=>{
+	
 	menuList.classList.toggle('active')
 	document.body.classList.toggle('opacity')
 })
 
-miList.addEventListener('click', (e)=>{
+miList.addEventListener('click', ()=>{
+	
 	menuList.classList.toggle('active')
 	document.body.classList.toggle('opacity')
 })
 
-techList.addEventListener('click', (e)=>{
+techList.addEventListener('click', ()=>{
+	
 	menuList.classList.toggle('active')
 	document.body.classList.toggle('opacity')
 })
-projectList.addEventListener('click', (e)=>{
+projectList.addEventListener('click', ()=>{
+	
 	menuList.classList.toggle('active')
 	document.body.classList.toggle('opacity')
 })
-
+/*LETRAS ANIMADAS*/
 const typed = new Typed('.typed', {
     strings: [
     '<i class="front">Frontend</i>', 
