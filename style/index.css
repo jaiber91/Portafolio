@@ -172,6 +172,7 @@ body {
 }
 .tecnology-icon ul {
   display: flex;
+  justify-content: end;
 }
 .tecnology-icon ul li {
   display: flex;
