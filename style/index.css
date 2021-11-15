@@ -189,6 +189,7 @@ transform: rotate(90deg);
 }
 .tecnology-icon ul li img{
     width: 4rem;
+    
 }
 .figma{
     width: 2rem;
@@ -246,9 +247,23 @@ transform: rotate(90deg);
 }
 /*FORMULARIO*/
 .formContainer{
+   margin-top: 15%;
+}
+.formContainer_details{
     display: flex;
     justify-content: center;
-    margin-top: 15%;
+    width: 100%;
+}
+.form-line{
+    width: 5rem;
+    height: 0;
+    border: 0.5rem solid #F4A710;
+    transform: rotate(90deg);
+}
+.formContainer h2{
+    color: var(--fontColor);
+    font-size: 4rem;
+    margin-left: 13%;
 }
 .form{
     display: flex;
